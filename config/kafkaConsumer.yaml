@@ -1,0 +1,4 @@
+kafkaConsumerConfig:
+    broker: 127.0.0.1
+    groupId: test
+    abc: sas
