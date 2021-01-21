@@ -4,7 +4,7 @@
 		module="problems_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20201215211530"
+		publication="20210120104900"
 	>
 		<description>
 		Problems
@@ -38,5 +38,6 @@
 		<dependency org="org.apache.spark" name="spark-sql_2.12" rev="2.4.2" conf="compile->default(compile)"/>
 		<dependency org="org.apache.logging.log4j" name="log4j-core" rev="2.11.1" conf="compile->default(compile)"/>
 		<dependency org="org.yaml" name="snakeyaml" rev="1.25" conf="compile->default(compile)"/>
+		<dependency org="org.elasticsearch" name="elasticsearch-hadoop" rev="6.4.2" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

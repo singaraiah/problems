@@ -12,23 +12,20 @@ object Permutations extends App {
     resStr
   }
 
-  def permutations(str: mutable.ListBuffer[Char], i: Int): Unit = {
-    var tmp = str
-    if (i == str.length) {
+  def permutations(str: mutable.ListBuffer[Char], left: Int): Unit = {
+
+    if( left == str.length - 1) {
       println(str)
     } else {
-      for (x <- i to str.length - 1) {
-        tmp = swap(str, i, x)
-        permutations(tmp, i + 1)
-        println(x,i)
-//        tmp = swap(tmp, i, x)
-//        println(s"tmp after 2nd swap $tmp")
-        
+      for(right <- left to str.length - 1) {
+        swap(str, left, right)
+        permutations(str, left + 1)
+        swap(str, left, right)
       }
     }
   }
 
-  permutations("abc".to[mutable.ListBuffer], 0)
+  permutations("abcd".to[mutable.ListBuffer], 0)
 
 
 }

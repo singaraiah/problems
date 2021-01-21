@@ -7,8 +7,20 @@
 		revision="0.1"
 		conf="runtime"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20201215211530"/>
+		date="20210120104900"/>
 	<dependencies>
+		<module organisation="org.elasticsearch" name="elasticsearch-hadoop">
+			<revision name="6.4.2" status="release" pubdate="20180926204123" resolver="public" artresolver="public" homepage="http://github.com/elastic/elasticsearch-hadoop" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="161">
+				<license name="The Apache Software License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4783" time="6107" location="/Users/singaraiah.jakka/.ivy2/cache/org.elasticsearch/elasticsearch-hadoop/ivy-6.4.2.xml" searched="true" original-local-location="/Users/singaraiah.jakka/.ivy2/cache/org.elasticsearch/elasticsearch-hadoop/ivy-6.4.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-hadoop/6.4.2/elasticsearch-hadoop-6.4.2.pom"/>
+				<caller organisation="default" name="problems_2.12" conf="compile, runtime" rev="6.4.2" rev-constraint-default="6.4.2" rev-constraint-dynamic="6.4.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="elasticsearch-hadoop" type="jar" ext="jar" status="successful" details="" size="966034" time="9033" location="/Users/singaraiah.jakka/.ivy2/cache/org.elasticsearch/elasticsearch-hadoop/jars/elasticsearch-hadoop-6.4.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/elasticsearch/elasticsearch-hadoop/6.4.2/elasticsearch-hadoop-6.4.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
 		<module organisation="org.yaml" name="snakeyaml">
 			<revision name="1.25" status="release" pubdate="20190814004836" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="160">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
