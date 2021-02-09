@@ -41,7 +41,7 @@ object MethodNotion12 extends App {
 //  println(p1())
 
   // 13
-  println((p1 + "abcd").apply())
+  println((p1 + "abcd")())
   println((+p1).age)
   println(p1 learnsScala)
   println(p1(10))

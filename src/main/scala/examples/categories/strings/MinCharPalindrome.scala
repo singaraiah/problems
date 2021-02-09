@@ -24,7 +24,7 @@ object MinCharPalindrome extends App {
 
   def solve(str: String)  = {
     var right = 0
-    for(i <- 1 to str.length) yield {
+    for(i <- 1 to str.length) {
       println(str.splitAt(i)._1)
       if(checkPalindrom(str.splitAt(i)._1)) right = i
     }

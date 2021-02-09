@@ -7,8 +7,8 @@ object OOBasics11 extends App {
   //val novel = new Novel("abcd", 2020, author)
   //println(novel.isWrittenBy(imposter ))
 
-  //  val counter = new Counter
-  //  counter.inc.inc.print
+//  val counter = new Counter
+//  counter.inc(3)
   class Writer(firstName: String, surname: String, val year: Int) {
     def fullName = firstName + "_" + surname
   }
@@ -21,7 +21,7 @@ object OOBasics11 extends App {
 
   class Counter(val count: Int=0) {
     def inc = {
-      println("ince")
+      println(s"ince")
       new Counter(count + 1)
     }
     def dec = {
@@ -29,9 +29,8 @@ object OOBasics11 extends App {
       new Counter(count - 1)
     }
 
-    def inc(n: Int): Counter = {
-      if(n == 0) this else inc(n-1).inc
-    }
+    def inc(n: Int): Counter = if(n == 0) this else inc(n-1).inc
+
     def dec(n: Int): Counter = if(n == 0) this else dec(n-1).dec
 
     def print = println(count)
