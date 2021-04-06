@@ -1,0 +1,9 @@
+bookID,title,authors,average_rating,language_code,num_pages,ratings_count,text_reviews_count
+1,Harry Potter and the Half-Blood Prince (Harry Potter  #6),J.K. Rowling-Mary GrandPr,4.56,eng,652,1944099,26249
+2,Harry Potter and the Order of the Phoenix (Harry Potter  #5),J.K. Rowling-Mary GrandPr,4.49,eng,870,1996446,27613
+3,Harry Potter and the Sorcerer's Stone (Harry Potter  #1),J.K. Rowling-Mary GrandPr,4.47,eng,320,5629932,70390
+4,Harry Potter and the Chamber of Secrets (Harry Potter  #2),J.K. Rowling,4.41,eng,352,6267,272
+5,Harry Potter and the Prisoner of Azkaban (Harry Potter  #3),J.K. Rowling-Mary GrandPr,4.55,eng,435,2149872,33964
+8,Harry Potter Boxed Set  Books 1-5 (Harry Potter  #1-5),J.K. Rowling-Mary GrandPr,4.78,eng,2690,38872,154
+9,"Unauthorized Harry Potter Book Seven News: ""Half-Blood Prince"" Analysis and Speculation",W. Frederick Zimmerman,3.69,en-US,152,18,1
+10,Harry Potter Collection (Harry Potter  #1-6),J.K. Rowling,4.73,eng,3342,27410,820
