@@ -22,10 +22,10 @@ class TrySparkTest extends AnyFunSuite with BeforeAndAfterEach {
 
   test("testing getTopRatedBooks function") {
     val sampleDF = spark.read.format("csv").option("header", "true")
-      .load("C:\\IdeaProjects\\CodeCoverage\\resource\\sample-books.csv")
+      .load("resources/sample-books.csv")
 
     val outDF = spark.read.format("csv").option("header", "true")
-      .load("C:\\IdeaProjects\\CodeCoverage\\resource\\sample-books-output.csv")
+      .load("resources/sample-books.csv")
 
     assert(getTopRatedBooks(sampleDF).schema.equals(outDF.schema) == true)
 
