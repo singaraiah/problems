@@ -13,11 +13,12 @@ object MaxSubArray extends App {
       val ele = if (resList(i-1)+list(i) > list(i)) resList(i-1)+list(i) else list(i)
       resList += ele
     }
+    resList
   }
 
   maxSubArray(list)
 
-  println(resList)
+//  println(resList)
 
 
   def maxSubArrayWithLoops = {

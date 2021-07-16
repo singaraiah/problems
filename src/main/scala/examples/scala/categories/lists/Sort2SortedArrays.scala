@@ -6,7 +6,7 @@ object Sort2SortedArrays extends App {
     if (arr1.isEmpty) resArr ++ arr2
     else if (arr2.isEmpty) resArr ++ arr1
     else if (arr1(0) > arr2(0)) sort2SortedArrays(arr1, arr2.tail, resArr ++ Array(arr2(0)))
-    else sort2SortedArrays(arr1.tail, arr2, resArr ++ Array(arr1(0)))
+    else sort2SortedArrays(arr1.tail, arr2, resArr :+ (arr1(0)))
   }
 
   val l1 = Array(11, 15, 17)
