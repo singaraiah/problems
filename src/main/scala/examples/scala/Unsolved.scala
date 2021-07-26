@@ -1,20 +1,46 @@
 package examples.scala
 
-import scala.collection.mutable
 
 object Unsolved extends App {
 
-  val hashMap = mutable.HashMap[Int, Int]()
-  hashMap += (2 -> 1)
-  hashMap += (1 -> 1)
-  hashMap.remove(1)
-  println(hashMap(2))
-//  val arr = Array(2,1,5,3)
-//  val target = 4
-//
-//  for( i <- 0 to arr.length-1) {
-//    var diff = target - arr(i)
-//    if (hashMap.contains(diff)) println(hashMap(diff),i) else hashMap += (arr(i) -> i)
-//  }
+  trait State[T] {
+    def press(context: T)
+  }
+
+  class Playing extends State[MediaPlayer] {
+    override def press(context: MediaPlayer): Unit = {
+      System.out.println("Pressing pause.")
+      context.setState(new Paused)
+    }
+  }
+
+  class Paused extends State[MediaPlayer] {
+    override def press(context: MediaPlayer): Unit = {
+      System.out.println("Pressing play.")
+      context.setState(new Playing)
+    }
+  }
+
+  case class MediaPlayer() {
+    private var state: State[MediaPlayer] = new Paused
+
+    def pressPlayOrPauseButton(): Unit = {
+      state.press(this)
+    }
+
+    def setState(state: State[MediaPlayer]): Unit = {
+      this.state = state
+    }
+  }
+
+  object MediaPlayerExample {
+    def main(args: Array[String]): Unit = {
+      val player = MediaPlayer()
+      player.pressPlayOrPauseButton()
+      player.pressPlayOrPauseButton()
+      player.pressPlayOrPauseButton()
+      player.pressPlayOrPauseButton()
+    }
+  }
 
 }
