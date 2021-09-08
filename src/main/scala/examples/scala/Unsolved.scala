@@ -3,6 +3,10 @@ package examples.scala
 
 object Unsolved extends App {
 
-//  Longest Valid Parentheses
+  val arr = Array(1,2,1)
+
+  def fountainActivation(arr: Array[Int]) = {
+
+  }
 
 }
