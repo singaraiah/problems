@@ -27,5 +27,4 @@ object Permutations extends App {
 
   permutations("abcd".to[mutable.ListBuffer], 0)
 
-
 }
